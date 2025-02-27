@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body{
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.isActive{
+  color: #06a05a !important;
+}
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-tabs__tab-list {
+  border-bottom: 1px solid #06a055;
+  margin: 0 0 10px;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react-tabs__tab {
+  background: white;
+  display: inline-block;
+
+  position: relative;
+  list-style: none;
+  padding: 14px 24px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.react-tabs__tab--selected {
+  background: #fff;
+  border:1px solid #06a055 !important;
+  color: black;
+  border-radius: 5px;
+  outline:none ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
 }
